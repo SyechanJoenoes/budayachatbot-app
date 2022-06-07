@@ -1,0 +1,235 @@
+{
+  "intents": [
+    {
+      "tag": "salam",
+      "patterns": ["Hi budaya", "Bagaimana Kabarmu", "Budaya Kamu disana?", "Hey", "Hola", "Hello", "Hei", "Hey", "Pagii", "Hi"],
+      "responses": ["Hi Pengguna", "Ya budaya disini, ada yang bisa dibantu?", "Ey watsupp", "Ekse Hoezit", "Hola", "Hey dude", "Kamu lagi"]
+    },
+    {
+      "tag": "perpisahan",
+      "patterns": ["Bye", "Sampai jumpa kembali", "Selamat Tinggal", "Ok bye", "Bye Bye"],
+      "responses": ["Sampai Jumpa kembali!", "Semoga Hari mu Bagus", "Tentu Bye - Bye", "Sampai nanti Kawan", "Sayoonara", "Salam Hangat", "Tentu kawan", "Ciao"]
+    },
+    {
+      "tag": "terimakasih",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+      "responses": ["Senang Membantu dirimu kawan", "Kapan pun saya dapat membantu saya akan senang", "Dengan senang Hati", "Sama Sama", "Tentu Kawan"]
+    },
+    { "tag": "tidakadajawaban", "patterns": [], "responses": ["Maaf Budaya tidak dapat memahami Anda", "Mohon Berikan saya info yang Jelas", "Belum Tentu saya mengerti", "Saya Masih Disini Silahkan Chat Saya untuk Memulai Percakapan"] },
+    {
+      "tag": "name",
+      "patterns": ["Siapa Namamu", "Kamu Siapa", "Katakan kepadaku siapa namamu", "Katakan Kepadaku tentang Dirimu", "Kamu adalah"],
+      "responses": ["Saya Budaya", "Nama saya Adalah Budaya", "Anda bisa memanggil saya Budaya dengan kesingkatan bdy tapi orang orang memanggil saya dengan sebutan budaya", "Budaya adalah nama Saya"]
+    },
+    {
+      "tag": "options",
+      "patterns": ["Apa Tugas mu Budaya", "Bagaimana Anda bisa membantu?", "Apa yang kamu ketahui", "Apa Tujuan Anda Budaya", "Bagaimana bisa membantu"],
+      "responses": ["Saya bisa mengatakan tentang DKI Jakarta", "Saya bisa memberikan informasi mengenai fakta DKI Jakarta"]
+    },
+    {
+      "tag": "info_Nanggroe Aceh Darussalam",
+      "patterns": ["Nanggroe Aceh Darussalam", "nanggroe aceh darussalam", "Apa yang kamu ketahui tentang Nanggroe Aceh Darussalam", "Info mengenai Nanggroe Aceh Darussalam", "Masakan khas Nanggroe Aceh Darussalam"],
+      "responses": [
+        "Aceh adalah daerah yang diresmikan sebagai provinsi pada tanggal 7 Desember 1959.",
+        "Aceh saat ini miliki luas wilayah 57.956,00 km persegi dan memilki 5.371.532 penduduk yang menempati propinsi Aceh",
+        "bukota dari provinsi Aceh adalah Banda Aceh dengan mayoritas agama dari penduduk Aceh adalah Islam.",
+        "mie aceh",
+        "karee kameng",
+        "gulaie keumamah"
+      ]
+    },
+    {
+      "tag": "info_Sumatera Utara",
+      "patterns": ["Sumatra Utara", "sumatra utara", "sumut", "Apa yang kamu ketahui tentang Sumatra Utara", "Info mengenai sumatra utara", "Masakan khas sumatra utara"],
+      "responses": [
+        "Sumatera Utara (disingkat Sumut) adalah sebuah provinsi di Indonesia yang terletak di bagian Utara pulau Sumatra",
+        "Provinsi ini beribu kota di Kota Medan, dengan luas wilayah 72.981,23 km2 dengan jumlah penduduk berjumlah 15.136.522 jiwa, dengan kepadatan penduduk 207,40 jiwa/km2",
+        "bika ambon",
+        "ayam pindar",
+        "anyang pakis",
+        "bihun bebek"
+      ]
+    },
+    {
+      "tag": "info_Sumatera Selatan",
+      "patterns": ["Sumatra Selatan", "sumatra selatan", "Apa yang kamu ketahui tentang Sumatra Selatan", "Info mengenai sumatra selatan", "Masakan khas sumatra selatan"],
+      "responses": [
+        "Ibu kota Sumatra Selatan berada di kota Palembang, dan pada tahun 2021 penduduk provinsi ini berjumlah 8.550.849 jiwa.",
+        "Secara geografis, Sumatra Selatan berbatasan dengan provinsi Jambi di utara, provinsi Kepulauan Bangka-Belitung di timur, provinsi Lampung di selatan dan Provinsi Bengkulu di barat",
+        "Provinsi ini kaya akan sumber daya alam, seperti minyak bumi, gas alam dan batu bara.",
+        "berengkes tampoyak",
+        "pindang tulang",
+        "Pempek"
+      ]
+    },
+    {
+      "tag": "info_Sumatera Barat",
+      "patterns": ["Sumatra Barat", "sumatra barat", "Apa yang kamu ketahui tentang Sumatra Barat", "Info mengenai sumatra barat", "Masakan khas sumatra barat"],
+      "responses": [
+        "Sumatra Barat (disingkat Sumbar) adalah sebuah provinsi di Indonesia yang terletak di Pulau Sumatra dengan ibu kota Padang",
+        "Provinsi Sumatra Barat terletak sepanjang pesisir barat Sumatra bagian tengah, dataran tinggi Bukit Barisan di sebelah timur, dan sejumlah pulau di lepas pantainya seperti Kepulauan Mentawai, dengan luas wilayah mencapai 42.012,89 km²",
+        "Sumatra Barat adalah rumah bagi etnis Minangkabau, walaupun wilayah adat Minangkabau sendiri lebih luas dari wilayah administratif Provinsi Sumatra Barat saat ini. Pada tahun 2020, provinsi ini memiliki penduduk sebanyak 5.534.472 jiwa dengan mayoritas beragama Islam",
+        "Rendang",
+        "Kacimuih",
+        "Pensi"
+      ]
+    },
+    {
+      "tag": "info_Bengkulu",
+      "patterns": ["Bengkulu", "bengkulu", "Apa yang kamu ketahui tentang Bengkulu", "Info mengenai Bengkulu", "Masakan khas Bengkulu"],
+      "responses": ["Pendap"]
+    },
+    {
+      "tag": "info_Riau",
+      "patterns": ["Riau", "riau", "Apa yang kamu ketahui tentang Riau", "Info mengenai Riau", "Masakan khas Riau"],
+      "responses": ["Gulai Belacan"]
+    },
+    {
+      "tag": "info_Kepulauan Riau",
+      "patterns": ["", "", ""],
+      "responses": ["Otak - Otak"]
+    },
+    {
+      "tag": "info_Jambi",
+      "patterns": ["Jambi", "jambi", "Apa yang kamu ketahui tentang jambi", "Info mengenai jambi", "Masakan khas jambi"],
+      "responses": ["Gulai Ikan Patin", "Nasi Gemuk", "Bolu Kojo"]
+    },
+    {
+      "tag": "info_Lampung",
+      "patterns": ["Lampung", "lampung", "Apa yang kamu ketahui tentang Lampung", "Info mengenai Lampung", "Masakan khas Lampung"],
+      "responses": ["Seruit"]
+    },
+    {
+      "tag": "info_Bangka Belitung",
+      "patterns": ["Bangka Belitung", "bangka belitung", "Apa yang kamu ketahui tentang bangka belitung", "Info mengenai bangka belitung", "Masakan khas bangka belitung"],
+      "responses": ["Mie Bangka"]
+    },
+    {
+      "tag": "info_Kalimantan Barat",
+      "patterns": ["Kalimantan Barat", "kalimantan barat", "Apa yang kamu ketahui tentang kalimantan barat", "Info mengenai kalimantan barat", "Masakan khas kalimantan barat"],
+      "responses": ["Bubur Pedas Sambas"]
+    },
+    {
+      "tag": "info_Kalimantan Timur",
+      "patterns": ["Kalimantan timur", "kalimantan timur", "Apa yang kamu ketahui tentang kalimantan timur", "Info mengenai kalimantan timur", "Masakan khas kalimantan timur"],
+      "responses": ["Ayam Cincane"]
+    },
+    {
+      "tag": "info_Kalimantan Selatan",
+      "patterns": ["Kalimantan Selatan", "kalimantan selatan", "Apa yang kamu ketahui tentang kalimantan selatan", "Info mengenai kalimantan selatan", "Masakan khas kalimantan selatan"],
+      "responses": ["Soto Banjar"]
+    },
+    {
+      "tag": "info_Kalimantan Tengah",
+      "patterns": ["Kalimantan Tengah", "kalimantan tengah", "Apa yang kamu ketahui tentang kalimantan tengah", "Info mengenai kalimantan tengah", "Masakan khas kalimantan tengah"],
+      "responses": ["Juhu Singkah"]
+    },
+    {
+      "tag": "info_Kalimantan Utara",
+      "patterns": ["Kalimantan Utara", "kalimantan utara", "Apa yang kamu ketahui tentang kalimantan utara", "Info mengenai kalimantan utara", "Masakan khas kalimantan utara"],
+      "responses": ["Sate Ikan Pari"]
+    },
+    {
+      "tag": "info_Banten",
+      "patterns": ["", "", ""],
+      "responses": ["Sate Bandeng"]
+    },
+    {
+      "tag": "info_ DKI Jakarta",
+      "patterns": ["makanan khas jakarta", "Makanan khas DKI Jakarta", "Info dki jakarta", "info jakarta", "fakta jakarta"],
+      "responses": [
+        "Kerak Telor",
+        "Ketoprak",
+        "Jakarta, ibukota besar Indonesia, terletak di pantai barat laut pulau Jawa. Perpaduan budaya yang bersejarah Jawa, Melayu, Cina, Arab, India, dan Eropa telah memengaruhi arsitektur, bahasa, dan masakannya. Kota tua, Kota Tua, adalah rumah bagi bangunan kolonial Belanda, Glodok (Pecinan Jakarta) dan pelabuhan tua Sunda Kelapa, di mana sekunar kayu tradisional berlabuh."
+      ]
+    },
+    {
+      "tag": "info_jawa_barat",
+      "patterns": ["Jawa Barat", "jawa barat", "masakan jawa barat", "Fakta unik tentang jawa barat", "Info mengenai jawa barat", "Bagaimana tentang jawa Barat", "Apa yang kamu ketahui tentang Jawa Barat", "Tell me more about SA"],
+      "responses": [
+        "Jawa Barat adalah salah satu provinsi di Indonesia dengan Ibukotanya adalah Bandung.",
+        "Provinsi Jawa Barat berada di bagian barat Pulau Jawa yang berbatasan dengan Laut Jawa di utara, Jawa Tengah di timur, Samudera Hindia di selatan, serta Banten dan DKI Jakarta di barat",
+        "Mayoritas penduduk Jawa Barat adalah Suku Sunda yang berbicara dengan Bahasa Sunda, yang terdiri dari 18 kabupaten, 9 kotamadya, 627 kecamatan, 645 kelurahan dan 5.312 desa. Pada tahun 2017, jumlah penduduknya diperkirakan mencapai 44.039.313 jiwa dengan total luas wilayah 35.377,76 km² ",
+        "Nasi Liwet",
+        "Serabi",
+        "Nasi Lengko",
+        "Empal Gentong"
+      ]
+    },
+    {
+      "tag": "info_Jawa Tengah",
+      "patterns": ["", "", ""],
+      "responses": ["Lumpia", "Tempe Mendoan"]
+    },
+    {
+      "tag": "info_DI Yogyakarta",
+      "patterns": ["", "", ""],
+      "responses": ["Nasi Gudeg"]
+    },
+    {
+      "tag": "info_Jawa timur",
+      "patterns": ["", "", ""],
+      "responses": ["Rujak Cingur"]
+    },
+    {
+      "tag": "info_ Bali",
+      "patterns": ["", "", ""],
+      "responses": ["Ayam Betutu"]
+    },
+    {
+      "tag": "info_Nusa Tenggara Timur",
+      "patterns": ["", "", ""],
+      "responses": ["Cetemak Jagung"]
+    },
+    {
+      "tag": "info_Nusa Tenggara Barat",
+      "patterns": ["", "", ""],
+      "responses": ["Ayam Taliwang"]
+    },
+    {
+      "tag": "info_Gorontalo",
+      "patterns": ["", "", ""],
+      "responses": [""]
+    },
+    {
+      "tag": "info_Sulawesi Barat",
+      "patterns": ["", "", ""],
+      "responses": [""]
+    },
+    {
+      "tag": "info_Sulawesi Tengah",
+      "patterns": ["", "", ""],
+      "responses": [""]
+    },
+    {
+      "tag": "info_ Sulawesi Utara",
+      "patterns": ["", "", ""],
+      "responses": [""]
+    },
+    {
+      "tag": "info_Sulawesi Tenggara",
+      "patterns": ["", "", ""],
+      "responses": [""]
+    },
+    {
+      "tag": "info_Sulawesi Selatan",
+      "patterns": ["", "", ""],
+      "responses": [""]
+    },
+    {
+      "tag": "info_Maluku Utara",
+      "patterns": ["", "", ""],
+      "responses": [""]
+    },
+    {
+      "tag": "info_Maluku",
+      "patterns": ["", "", ""],
+      "responses": [""]
+    },
+    {
+      "tag": "info_Papua Barat",
+      "patterns": ["", "", ""],
+      "responses": [""]
+    }
+  ]
+}

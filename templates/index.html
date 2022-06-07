@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/budaya.css" />
+    <link rel="shorcut icon" href="images/favicon-bar.svg" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <title>Budaya</title>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/growup-logo.svg" alt="brand" />
+          <span>Budaya Chatbot</span>
+        </a>
+        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bx bx-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary shadow-none">Get Started</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <h1 class="">Welcome to Budaya Chatbot</h1>
+      <br />
+      <hr />
+      <br />
+      <div class="row">
+        <div class="col-lg-9">
+          <input class="form-control" type="text" name="question" id="question" />
+        </div>
+        <div class="col-lg-3">
+          <button class="btn btn-primary btn-block" id="submit-button">Send</button>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col">
+          <p id="response"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="copy" data-aos="fade-up" data-aos-duration="3000">
+              <div class="text-label">Budaya Bot Siap Membantu Anda</div>
+              <div class="text-hero-bold">Budaya Membantu Dirimu</div>
+              <div class="text-hero-regular">Budaya Chatbot Menyediakan Berbagai Pertanyaan Seputar Keunikan dari Adat-Adat Yang ada Di Indonesia</div>
+              <div class="cta">
+                <a href="#" class="btn btn-primary shadow-none">Klik untuk Bantuan</a>
+                <a href="#" class="btn btn-secondary shadow-none ms-3">Video </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="3000">
+            <img src="images/Hero Image.svg" class="w-100" alt="img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/static/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+    <script>
+      jQuery(document).ready(function () {
+        $('#submit-button').click(function (e) {
+          e.preventDefault();
+
+          $.ajax({
+            type: 'POST',
+            url: '/chatbot',
+            data: {
+              question: $('#question').val(),
+            },
+            success: function (result) {
+              $('#response').append('<br>Me: ' + $('#question').val() + '<br> Budaya: ' + result.response);
+              $('#question').val('');
+            },
+            error: function (result) {
+              alert('error');
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
